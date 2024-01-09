@@ -1,0 +1,120 @@
+*,
+*::after,
+*::before {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.container {
+  margin: 50px 400px;
+  background-color: darksalmon;
+  overflow-x: hidden;
+  padding: 60px 40px;
+  width: 740px;
+  height: 670px;
+  border-radius: 10px;
+}
+.title {
+  font-size: 50px;
+}
+.title > span {
+  color: brown;
+  background-color: rgb(195, 231, 241);
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin-left: 200px;
+}
+.title > span:hover {
+  background-color: lightblue;
+}
+
+.time-page {
+  margin: 100px 150px;
+  background-color: blueviolet;
+  color: white;
+  padding: 20px 20px;
+  width: 400px;
+  border-radius: 10px;
+  text-align: center;
+}
+.time-page > span {
+  font-size: 50px;
+  cursor: pointer;
+}
+.btns {
+  /* margin: 50px 200px; */
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.btns > button {
+  padding: 20px 20px;
+  width: 200px;
+  font-size: 24px;
+  color: white;
+  border: none;
+  outline: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.btns > button:nth-child(1) {
+  background-color: green;
+}
+.btns > button:nth-child(2) {
+  background-color: red;
+}
+.btns > button:nth-child(3) {
+  background-color: darkcyan;
+}
+
+/*Responsives*/
+
+/*1150px*/
+@media (max-width: 1150px) {
+  .container {
+    margin-left: 200px;
+  }
+}
+/*939px*/
+@media (max-width: 940px) {
+  .container {
+    margin-left: 100px;
+  }
+}
+/*854px*/
+@media (max-width: 855px) {
+  .container {
+    margin-left: 70px;
+  }
+}
+/*820px*/
+@media (max-width: 822px) {
+  .container {
+    margin-left: 20px;
+  }
+}
+/*770px*/
+@media (max-width: 770px) {
+  .container {
+    margin-left: 3px;
+  }
+}
+/*405px*/
+@media (max-width: 405px) {
+  .btns {
+    flex-direction: column;
+  }
+  .container {
+    height: 900px;
+  }
+  .btns > button {
+    width: 100%;
+    font-size: 28px;
+  }
+  .time-page {
+    width: 100%;
+    margin-left: 0px;
+  }
+}
